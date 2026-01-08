@@ -6,5 +6,7 @@ public class Main {
 
         Cow c = new Cow();
         c.makeSound();
+
+        Animal.printInfo();
     }
 }
