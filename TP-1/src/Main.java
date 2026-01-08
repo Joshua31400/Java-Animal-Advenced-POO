@@ -1,22 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
-        Animal a = new Animal();
-        a.makeSound();
-        a.eat();
-        a.eat("de la nourriture");
+        Pet pet1 = new Dog();
+        Pet pet2 = new Cow();
 
-        Cow c = new Cow();
-        c.makeSound();
-        c.eat();
-        c.eat("du foin");
-        c.play();
+        System.out.println("Manipulation via Pet");
+        pet1.play();
+        pet2.play();
 
-        Dog d = new Dog();
-        d.makeSound();
-        d.eat();
-        d.eat("des os");
+        List<Animal> animals = new ArrayList<>();
+        animals.add(new Dog());
+        animals.add(new Cow());
+        animals.add(new Dog());
+        animals.add(new Cow());
 
+        System.out.println("\nParcours de la liste d'animaux");
+        for (Animal animal : animals) {
+            animal.makeSound();
+            animal.eat();
+
+            if (animal instanceof Pet) {
+                ((Pet) animal).play();
+            }
+        }
         Animal.printInfo();
     }
 }

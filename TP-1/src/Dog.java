@@ -1,10 +1,14 @@
-public class Dog extends Animal {
-
+public class Dog extends Animal implements Pet {
     public Dog () {
         this.name = "Dog";
         this.age = "3";
         this.color = "Brown";
         this.weight = 20;
+    }
+    
+    @Override
+    public void play() {
+        System.out.println("Je suis un: " + name + " et j'aime jouer dans le park.");
     }
 
     @Override
