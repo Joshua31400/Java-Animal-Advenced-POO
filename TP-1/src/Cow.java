@@ -7,6 +7,11 @@ public class Cow extends Animal {
 
     @Override
     void makeSound() {
-        System.out.println("My name is: " + name + ". I have: " + age + ". MoOoOoOoOoO je suis une vache");
+        System.out.println("Mon nom est: " + name + ", je suis agé de: " + age + " ans," + " MoOoOoOoOoO je suis une vache");
+    }
+
+    @Override
+    void eat() {
+        System.out.println("Je suis une: " + name + " donc je mange de l'herbe.");
     }
 }
