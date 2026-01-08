@@ -10,6 +10,7 @@ public class Main {
         c.makeSound();
         c.eat();
         c.eat("du foin");
+        c.play();
 
         Dog d = new Dog();
         d.makeSound();
