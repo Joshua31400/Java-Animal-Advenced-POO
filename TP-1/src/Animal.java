@@ -1,4 +1,12 @@
 public class Animal {
+    private String species;
+    protected String color;
+    public Integer weight;
+
+    public String getSpecies() {
+        return species;
+    }
+
     String name;
     String age;
 
