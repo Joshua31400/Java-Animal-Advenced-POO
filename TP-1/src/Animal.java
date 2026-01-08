@@ -10,6 +10,10 @@ public class Animal {
         System.out.println();
     }
 
+    void eat(String food) {
+        System.out.println("L'aniamal mange: " + food + ".");
+    }
+
     static void printInfo() {
         System.out.println("Je suis un animal donc je doit manger pour vivre.");
     }
