@@ -1,11 +1,11 @@
-public class Dog extends Animal implements Pet {
+public class Dog extends Animal implements Pet, Wild {
     public Dog () {
-        this.name = "Dog";
-        this.age = "3";
-        this.color = "Brown";
+        this.name = "Chien";
+        this.age = "3ans";
+        this.color = "Brun";
         this.weight = 20;
     }
-    
+
     @Override
     public void play() {
         System.out.println("Je suis un: " + name + " et j'aime jouer dans le park.");
@@ -13,11 +13,16 @@ public class Dog extends Animal implements Pet {
 
     @Override
     void makeSound() {
-        System.out.println("Mon nom est: " + name + ", je suis agé de: " + age + " ans," +" WoOoOoOoOoOFFFF je suis un chien " + color + " et je pèse " + weight + " kg.");
+        System.out.println("Je suis un " + name + ", je suis agé de " + age +" WoOoOoOoOoOFFFF je suis " + color + " et je pèse " + weight + " kg.");
     }
 
     @Override
     void eat() {
-        System.out.println("Je suis un: " + name + " donc je mange des croquettes.");
+        System.out.println("Je suis un " + name + " donc je mange des croquettes.");
+    }
+
+    @Override
+    public void hunt() {
+        System.out.println("Un " + name + " chasse un chat !");
     }
 }

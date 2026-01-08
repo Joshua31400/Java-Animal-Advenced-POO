@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     private String species;
     protected String color;
     public Integer weight;
@@ -10,16 +10,12 @@ public class Animal {
     String name;
     String age;
 
-    void makeSound() {
-        System.out.println();
-    }
+    abstract void makeSound();
 
-    void eat() {
-        System.out.println();
-    }
+    abstract void eat();
 
     void eat(String food) {
-        System.out.println("L'aniamal mange: " + food + ".");
+        System.out.println("L'animal mange: " + food + ".");
     }
 
     static void printInfo() {
